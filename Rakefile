@@ -6,7 +6,7 @@ begin
   Jeweler::Tasks.new do |gem|
     gem.name = "esperanto"
     gem.summary = %Q{Esperanta morfologio kaj gramatiko por Rubeno}
-    gem.description = %Q{TODO: longer description of your gem}
+    gem.description = %Q{Esperanta morfologio kaj gramatiko por Rubeno. Inkludas abstrakta adaptilo por morfemika analizi}
     gem.email = "rotuka@rotuka.com"
     gem.homepage = "http://github.com/rotuka/esperanto"
     gem.authors = ["Alexander Semyonov"]
