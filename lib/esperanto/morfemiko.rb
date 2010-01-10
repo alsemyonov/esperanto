@@ -6,7 +6,7 @@ module Esperanto
     autoload :Sufikso, 'esperanto/morfemiko/sufikso'
     autoload :Finajxo, 'esperanto/morfemiko/finajxo'
 
-    autoload :Vorto, 'esperanto/morfemiko/vorto'
+    autoload :AbstraktaVorto, 'esperanto/morfemiko/abstrakta_vorto'
 
     def parse(vorto)
       # TODO
