@@ -5,7 +5,7 @@
 
 Gem::Specification.new do |s|
   s.name = %q{esperanto}
-  s.version = "0.0.1"
+  s.version = "0.0.2"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Alexander Semyonov"]
@@ -23,7 +23,12 @@ Gem::Specification.new do |s|
      "README.rdoc",
      "Rakefile",
      "VERSION",
+     "esperanto.gemspec",
      "lib/esperanto.rb",
+     "lib/esperanto/adaptilo.rb",
+     "lib/esperanto/adaptilo/abstrakta.rb",
+     "lib/esperanto/adaptilo/abstrakta/morfemiko/bazo.rb",
+     "lib/esperanto/adaptilo/abstrakta/morfemiko/vorto.rb",
      "lib/esperanto/core_ext/string.rb",
      "lib/esperanto/core_ext/symbol.rb",
      "lib/esperanto/gramatiko.rb",
@@ -34,7 +39,8 @@ Gem::Specification.new do |s|
      "lib/esperanto/morfemiko/radiko.rb",
      "lib/esperanto/morfemiko/sufikso.rb",
      "lib/esperanto/morfologio.rb",
-     "lib/esperanto/morfologio/vorto.rb",
+     "lib/esperanto/morfologio/finajxvorto.rb",
+     "lib/esperanto/morfologio/vorteto.rb",
      "test/helper.rb",
      "test/test_esperanto.rb"
   ]
@@ -54,11 +60,17 @@ Gem::Specification.new do |s|
 
     if Gem::Version.new(Gem::RubyGemsVersion) >= Gem::Version.new('1.2.0') then
       s.add_development_dependency(%q<shoulda>, [">= 0"])
+      s.add_runtime_dependency(%q<abstract>, [">= 0"])
+      s.add_runtime_dependency(%q<activesupport>, [">= 0"])
     else
       s.add_dependency(%q<shoulda>, [">= 0"])
+      s.add_dependency(%q<abstract>, [">= 0"])
+      s.add_dependency(%q<activesupport>, [">= 0"])
     end
   else
     s.add_dependency(%q<shoulda>, [">= 0"])
+    s.add_dependency(%q<abstract>, [">= 0"])
+    s.add_dependency(%q<activesupport>, [">= 0"])
   end
 end
 
