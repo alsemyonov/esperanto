@@ -1,6 +1,6 @@
 module Esperanto
   module Morfemiko
-    class Finajxo
+    class Finajxo < Bazo
       cattr_accessor :defauxlto_finajxo
 
       def to_s

@@ -1,7 +1,5 @@
 module Esperanto
   module Morfologio
-    autoload :Vorto, 'esperanto/morfologio/vorto'
-
     autoload :Vorteto, 'esperanto/morfologio/vorteto'
     autoload :Finajxvorto, 'esperanto/morfologio/finajxvorto'
 
